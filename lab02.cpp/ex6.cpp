@@ -1,4 +1,4 @@
-//Crie um programa  capaz de multiplicar uma linha de uma matriz de inteiros por um dado número. Faça o mesmo para uma coluna. A matriz deve ser lida de teclado.
+//Crie um programa capaz de criar a transposta de uma matriz. A matriz deve ser lida de teclado.
 
 
 #include <iostream>
