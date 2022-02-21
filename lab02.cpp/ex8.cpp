@@ -22,10 +22,10 @@ int main() {
   matriz[2][1] = 8;
   matriz[2][2] = 9;
 
-  cout << "\nmatriz:" << endl;
+  cout << "matriz:" << endl;
 
-  for(int i = 0; i < LIN; i++){
-    for(int k = 0; k < COL; k++){
+  for (int i = 0; i < LIN; i++){
+    for (int k = 0; k < COL; k++){
       cout << matriz[i][k] << " ";
     }
     cout << endl;
@@ -35,15 +35,15 @@ int main() {
 
   srand(time(NULL));
 
-  for(int i = 0; i < LIN; i++){
-    for(int k = 0; k < COL; k++){
+  for (int i = 0; i < LIN; i++){
+    for (int k = 0; k < COL; k++){
       matrizTRANS[k][i] = matriz[i][k];
     }
   }
 
-  cout << "matriz transposta:" << endl;
-  for(int i = 0; i < COL; i++){
-    for(int k = 0; k < LIN; k++){
+  cout << "\nmatriz transposta:" << endl;
+  for (int i = 0; i < COL; i++){
+    for (int k = 0; k < LIN; k++){
       cout << matrizTRANS[i][k] << " ";
     }
     cout << endl;
