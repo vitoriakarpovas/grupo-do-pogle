@@ -6,16 +6,16 @@ using namespace std;
 
 int main() {
   int COL, LIN;
-  cout << "Por favor, inserir o número de colunas: ";
+  cout << "Número de colunas: ";
   cin >> COL;
-  cout << "Por favor, inserir o número de linhas: ";
+  cout << "Número de linhas: ";
   cin >> LIN;
   
   int matriz[LIN][COL];
   int valor;
-  for(int i = 0; i < LIN; i++){
-    for(int k = 0; k < COL; k++){
-      cout << "Por favor, inserir o valor da matriz" << "[" << i+1 << "]" << "[" << k+1 << "]" << endl;
+  for (int i = 0; i < LIN; i++){
+    for (int k = 0; k < COL; k++){
+      cout << "Valor da matriz [" << i+1 << "][" << k+1 << "]: ";
       cin >> valor;
       matriz[i][k] = valor;
     }
@@ -23,17 +23,17 @@ int main() {
 
   cout << "\nmatriz: " << endl;
 
-  for(int i = 0; i < LIN; i++){
-    for(int k = 0; k < COL; k++){
+  for (int i = 0; i < LIN; i++){
+    for (int k = 0; k < COL; k++){
       cout << matriz[i][k];
       cout << "  ";
     }
     cout << endl;
   }
 
-  for(int i = 0; i < LIN; i++){
-    for(int k = 0; k < COL; k++){
-      if(i == 1){
+  for (int i = 0; i < LIN; i++){
+    for (int k = 0; k < COL; k++){
+      if (i == 1){
         matriz[i][k] += matriz[i-1][k];
       }
     }
@@ -42,8 +42,8 @@ int main() {
   cout << "\nmatriz: " << endl;
   cout << "Soma: L2 = L2 + L1" << endl;
 
-  for(int i = 0; i < LIN; i++){
-    for(int k = 0; k < COL; k++){
+  for (int i = 0; i < LIN; i++){
+    for (int k = 0; k < COL; k++){
       cout << matriz[i][k];
       cout << "  ";
     }
@@ -53,16 +53,16 @@ int main() {
   cout << "\nmatriz: " << endl;
   cout << "Multiplicação: L2 = L2 * L1" << endl;
 
-  for(int i = 0; i < LIN; i++){
-    for(int k = 0; k < COL; k++){
-      if(i == 1){
+  for (int i = 0; i < LIN; i++){
+    for (int k = 0; k < COL; k++){
+      if (i == 1){
         matriz[i][k] *= matriz[i-1][k];
       }
     }
   }
 
-  for(int i = 0; i < LIN; i++){
-    for(int k = 0; k < COL; k++){
+  for (int i = 0; i < LIN; i++){
+    for (int k = 0; k < COL; k++){
       cout << matriz[i][k];
       cout << "  ";
     }
