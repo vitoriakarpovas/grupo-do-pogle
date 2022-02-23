@@ -27,8 +27,6 @@ int main() {
     cout << endl;
   }
 
-  srand(time(NULL));
-
   int LIN, COL, a, b;
   
   cout << "\nqual linha vc deseja multiplicar? ";
