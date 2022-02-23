@@ -31,8 +31,6 @@ int main() {
     cout << endl;
   }
 
-  srand(time(NULL));
-
   for (int i = 0; i < LIN; i++){
     for (int j = 0; j < COL; j++){
       if (matriz[i][j] < 0){
