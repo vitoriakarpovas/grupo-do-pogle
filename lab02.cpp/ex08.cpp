@@ -33,8 +33,6 @@ int main() {
 
   int matrizTRANS[COL][LIN];
 
-  srand(time(NULL));
-
   for (int i = 0; i < LIN; i++){
     for (int k = 0; k < COL; k++){
       matrizTRANS[k][i] = matriz[i][k];
