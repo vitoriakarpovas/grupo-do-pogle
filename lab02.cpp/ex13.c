@@ -9,7 +9,7 @@ int main(){
   int qnt = 0, pos;
   
   printf("Digite uma frase: ");
-  scanf("%s", frase);
+  fgets(frase, 100, stdin);
   
   printf("Digite a posicao do caracter que deseja remover: ");
   scanf("%d", &pos);
