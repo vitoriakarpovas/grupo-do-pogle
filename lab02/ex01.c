@@ -33,14 +33,8 @@ int main(int argc , char *argv[])
       arr[i] = arr[i - 1]*k;
       k++;
     }
-  
-    for (j = 0; j < n; j++){
-      for (i = 0; i <= j; i++){
-        printf(" %d ",arr[i]);
-      }
-      printf("\n");
-    }
     
+    printf("%d ",arr[n-1]);
   }
   else {
     wait(NULL);
