@@ -1,0 +1,10 @@
+vitoria/20/1.60
+gustavo/21/1.63
+pogle/21/1.80
+rafael/20/1.73
+Guilherme/21/1.81
+Eizono/21/1.68
+Julia/13/1.54
+Gaston/42/1.63
+Ednaldo/24/1.78
+Eduardo/40/1.81
