@@ -15,7 +15,7 @@ typedef struct
 int main()
 {
   
-  Person victor[4];
+  Person user[4];
   FILE *file;
   FILE *arq;
   const char s[3] = "\0";
@@ -40,18 +40,18 @@ int main()
   {
     token = strtok(frase, s);
     char *ptr = strtok(token, p);
-    strcpy(victor[i].name, ptr);
+    strcpy(user[i].name, ptr);
     ptr = strtok(NULL, p);
-    victor[i].age = atoi(ptr);
+    user[i].age = atoi(ptr);
     ptr = strtok(NULL, p);
-    victor[i].height = atof(ptr);
+    user[i].height = atof(ptr);
     i++;
   }
   fclose(file);
 
   for(int p = 0; p < 10;p++)
     {
-      fprintf(arq,"nome: %s\nidade: %d\naltura: %2.2f\n\n", victor[p].name, victor[p].age,victor[p].height);
+      fprintf(arq,"nome: %s\nidade: %d\naltura: %2.2f\n\n", user[p].name, user[p].age,user[p].height);
     }
   fclose(arq);
 }
