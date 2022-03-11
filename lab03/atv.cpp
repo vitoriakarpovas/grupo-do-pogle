@@ -15,7 +15,7 @@ typedef struct
 int main()
 {
   
-  Person user[4];
+  Person user[10];
   FILE *file;
   FILE *arq;
   const char s[3] = "\0";
