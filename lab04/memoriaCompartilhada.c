@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-#define ADDKEY 123
+
 
 int main()
 {
@@ -54,7 +54,7 @@ int main()
     {
       //Se vc tirar esse processo do else ele sera lido 2 vezes paralelamente (isso tava bom na minha cabeça, me deixa)
       wait(&status); 
-      printf("Apos esperar, foi detectado que o processo filho foi completado...\n");
+      printf("\nApos esperar, foi detectado que o processo filho foi completado...\n");
       
         //o processo pai realiza uma outra operação, modificando novamente o valor, e imprime novamente a variável
       printf("\nVariavel se encontra no processo pai.");
@@ -65,6 +65,8 @@ int main()
     printf("\nMemoria compartilhada removida");
     shmctl(shmid, IPC_RMID, NULL);
 
-    printf("\nGOOD-BYE AMIGOS\n");
+    printf("\n****Server exits...****\n");
     exit(0);
 }
+
+
